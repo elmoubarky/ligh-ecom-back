@@ -37,6 +37,7 @@ public class LightEcomApplication implements CommandLineRunner{
 		repositoryRestConfiguration.exposeIdsFor(Product.class, Category.class);
 		
 		categoryRepository.save(new Category(null, "Ordinateurs",null, null, null));
+		categoryRepository.save(new Category(null, "Mobile",null, null, null));
 		categoryRepository.save(new Category(null, "Printers", null, null, null));
 		categoryRepository.save(new Category(null, "Smart Phones",null, null, null));
 		
